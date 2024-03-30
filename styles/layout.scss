@@ -1,17 +1,17 @@
 .main-layout {
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 12vw 1fr 12vw;
 
     >* {
         grid-column: 2/3;
 
-       
     }
 
     .full {
         grid-column: 1/-1;
 
     }
+    
 
     &.darkMode {
         background-color: black;
@@ -21,13 +21,13 @@
 @media (max-width:1260px) {
     .main-layout {
 
-        grid-template-columns: 50px 1fr 50px;
+        grid-template-columns: 10vw 1fr 10vw;
 
     
 }
 }
 
-@media (max-width:770px) {
+@media (max-width:450px) {
     .main-layout {
 
         >* {

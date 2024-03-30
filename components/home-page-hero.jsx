@@ -1,13 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
-import nameImg from '../assets/imgs/ben-name-title.png'
-export default function HomePageHero({ children }) {
+import nameImg from '@/assets/imgs/ben-name-title.png'
+export default function HomePageHero() {
+  
   return (
-    <section className='home-page-hero'>
-      {children}
-      <h1 className='hero-name-container bottom-40vh h-2/6vh w-20vw relative'>
-        <Image src={nameImg} alt='hero-name' className='object-cover'/>
-      </h1>
-      </section>
+    <article className='home-page-hero absolute top-0 right-10vw'>
+      <div className='hero-name-container'>
+        <Image src={nameImg} alt='hero-name' className='object-cover h-33vh mobile:h-27vh max-w-25vh'/>
+      </div>
+      <p className='font-bold max-w-fit text-center text-4xl mobile:text-2xl text-headline-font-color relative bottom-10vh 
+      mobile:bottom-9vh mobile:right-4vw smMobile:hidden'>
+        הילד עם החיוך הנצחי
+      </p>
+      </article>
   )
 }

@@ -1,6 +1,6 @@
 import Navbar from '@/components/navbar';
-import '../styles/globals.scss'
-import '../styles/layout.scss'
+import '@/styles/globals.scss'
+import '@/styles/layout.scss'
 
 
 export const metadata = {

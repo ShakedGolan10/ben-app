@@ -1,15 +1,17 @@
-import HomePageHero from "@/components/HOME-PAGE-HERO";
 import About from "@/components/about";
+import HomePageHero from "@/components/home-page-hero";
+import InHisWay from "@/components/in-his-way";
 import MainHeroImg from "@/components/main-hero-img";
-import Image from "next/image";
+import StoriesSection from "@/components/stories-sections";
 
 export default function HomePage() {
   return (
-    <main className="full">
-      <HomePageHero>
-        <MainHeroImg />
-      </HomePageHero>
+    <>
+      <MainHeroImg />
+      <HomePageHero />
       <About />
-    </main>
+      <StoriesSection />
+      <InHisWay />
+    </>
   );
 }
