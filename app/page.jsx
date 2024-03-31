@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import BenBlogTeaser from "@/components/ben-blog-teaser";
 import HomePageHero from "@/components/home-page-hero";
 import InHisWay from "@/components/in-his-way";
 import MainHeroImg from "@/components/main-hero-img";
@@ -12,6 +13,7 @@ export default function HomePage() {
       <About />
       <StoriesSection />
       <InHisWay />
+      <BenBlogTeaser />
     </>
   );
 }

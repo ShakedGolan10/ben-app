@@ -1,3 +1,4 @@
+import AppFooter from '@/components/app-footer';
 import Navbar from '@/components/navbar';
 import '@/styles/globals.scss'
 import '@/styles/layout.scss'
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <main className='main-layout'>
           {children}
         </main>
+        <AppFooter />
         </body>
     </html>
   );

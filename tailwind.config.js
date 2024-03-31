@@ -32,6 +32,7 @@ const config = {
 
       backgroundImage: {
         'bgc-footer-buttons': 'linear-gradient(270.08deg, #B4D4FF 0.08%, #65A7FF 165.84%)',
+        'bgc-app-footer': 'linear-gradient(270.08deg, #B4D4FF 0.08%, #65A7FF 165.84%)',
         'bgc-stories-section': 'radial-gradient(circle, rgba(255,255,255,1) 37%, rgba(101,167,255,1) 78%)',
         'bgc-buttons': 'radial-gradient(circle, rgba(255,255,255,1) 11%, rgba(101,167,255,1) 57%)',
         'bgc-white': 'radial-gradient(circle, rgba(101,167,255,1) 0%, rgba(255,255,255,1) 0%)',
@@ -88,6 +89,7 @@ const config = {
       colors: {
         'bgc-nav-bar-upper': '#B4D4FF',
         'headline-font-color': '#0F2167',
+        'send-btn-footer': '#1676A0',
         'app-red': '#f2b0bc',
         'app-blue': '#b0d1f2',
 
