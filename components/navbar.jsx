@@ -20,6 +20,7 @@ export default function Navbar() {
     window.addEventListener('resize' , () => {
       setIsOpen(false)
     })
+   
     return window.removeEventListener('resize',()=> {setIsOpen(false)})
   };
 
@@ -32,7 +33,7 @@ export default function Navbar() {
       </div>
       <div className='mobile:hidden links-div flex flex-row justify-around items-center gap-nav-links-gap mobile:gap-2vw'>
         {navbarLinks.map(({ id, label, link }) => (
-          <Link key={id} href={link} className='no-underline font-medium mobile:text-small'>
+          <Link onClick={()=>setIsOpen(false)} key={id} href={link} className='no-underline font-medium mobile:text-small'>
             {label}
           </Link>
         ))}
@@ -44,9 +45,9 @@ export default function Navbar() {
         <div></div>
       </div>
       {isOpen && (
-        <div className='side-modal mobile:block'>
+        <div className='side-modal mobile:block '>
           {navbarLinks.map(({ id, label, link }) => (
-            <Link key={id} href={link} className='no-underline font-medium mobile:text-small'>
+            <Link onClick={()=>setIsOpen(false)} key={id} href={link} className='no-underline font-medium mobile:text-small'>
               {label}
             </Link>
           ))}

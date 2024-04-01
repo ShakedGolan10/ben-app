@@ -36,6 +36,7 @@ const config = {
         'bgc-stories-section': 'radial-gradient(circle, rgba(255,255,255,1) 37%, rgba(101,167,255,1) 78%)',
         'bgc-buttons': 'radial-gradient(circle, rgba(255,255,255,1) 11%, rgba(101,167,255,1) 57%)',
         'bgc-white': 'radial-gradient(circle, rgba(101,167,255,1) 0%, rgba(255,255,255,1) 0%)',
+        'bg-ben-storypage-hero': 'url(../assets/imgs/my-story-hero-img.png)'
       },
       height: {
         'navbar-height': '90px',
@@ -101,8 +102,7 @@ const config = {
       },
       objectPosition: {
         'heroImg': '0vw -20vw',
-        'heroImgTablet': '0vw 0vw',
-        'heroImgMobile': '0vw 0vw',
+        'heroImgSetZero': '0vw 0vw',
       },
       keyframes: {
         scrollMessages: {

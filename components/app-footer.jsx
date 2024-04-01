@@ -50,17 +50,17 @@ const onChange = ({target}) => {
             <FaFacebook />
             <FaWhatsapp />
             </div>
-            <a href='/privacy'>מדיניות הפרטיות</a>
+            <a href='/privacy' className='text-center'>מדיניות הפרטיות</a>
 
       </article>
       
-      <article className='newsletter and policy-links links-div flex flex-col justify-around items-center gap-1vw'>
+      <article className='newsletter and policy-links links-div flex flex-col justify-around items-center gap-1vw p-5'>
             <section className='newsletter-form flex flex-col justify-around items-start gap-1vw'>
                 <h4 className='text-headline-font-color underline text-right'>הירשמו לניוזלטר</h4>
                 <p className=''>הישארו מעודכנים על פעילויות והתנדבויות</p>
                 <form action="submit " onSubmit={submitNewsletterForm}>
-                    <input value={formEmail} onChange={onChange} type="text" className='bg-headline-font-color focus:bg-white max-w-20vw h-3vh' />
-                    <button type='submit' className='bg-send-btn-footer h-3vh w-13vw'>שלח</button>
+                    <input value={formEmail} onChange={onChange} type="text" className='bg-headline-font-color focus:bg-white max-w-30vw h-3vh' />
+                    <button type='submit' className='bg-send-btn-footer h-3vh w-[50px]'>שלח</button>
                 </form>
             </section>
       </article>

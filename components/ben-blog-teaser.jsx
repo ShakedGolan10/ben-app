@@ -16,8 +16,8 @@ export default function BenBlogTeaser() {
         <article className='headlines flex flex-col gap-2vh'>
             <h1 className="text-center text-headline-font-color font-bold text-4xl ">הבלוג של בן</h1>
             <div className=" rounded-lg flex mobile:flex-col gap-2vw ">
-                <Image src={smilyHandwrite} alt="Image of ben handwrite" className="w-30vw h-10vh mobile:h-20vh 
-                mobile:w-40vw object-contain" />
+                <Image src={smilyHandwrite} alt="Image of ben handwrite" className="w-40vw h-10vh 
+                mobile:w-70vw object-contain" />
         </div>
         </article>
     <div className=" rounded-lg flex mobile:flex-col gap-2vw ">
