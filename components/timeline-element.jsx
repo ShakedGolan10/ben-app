@@ -10,7 +10,7 @@ export default function TimelineElement({imgSrc, paragraph, adjustArticleTailwin
               {paragraph}
           </p>
           <Image src={greenLine} alt='green timeline line' 
-          className={`mobile:hidden absolute top-[85%] right-[50%] object-cover w-33vw h-25vh z-[1] ${adjustGreenLineImageTailwindString}`} 
+          className={`mobile:hidden absolute top-[85%] right-[50%] object-cover w-33vw h-25vh ${adjustGreenLineImageTailwindString}`} 
           />
       </article>
   )

@@ -17,7 +17,7 @@ export default function About() {
         <Image src={benTypoImg} alt='ben handwrite sentance' className='bottom-33vh right-37vw max-h-25vh max-w-8vw self-end mobile:max-w-77vw mobile:self-center object-contain'/>
         <Image src={aboutImg} alt='image of ben' className='rounded-r-md h-66vh max-w-30vw object-cover self-end mobile:max-w-77vw mobile:self-center' />
         </div>
-        <div className='star-img-2-container h-17vh w-17vw absolute right-71vw -bottom-4vh'>
+        <div className='star-img-2-container h-17vh w-17vw absolute right-60vw -bottom-4vh'>
             <Image src={starImg} alt='star-icon' className='object-cover'/>
         </div>
         
