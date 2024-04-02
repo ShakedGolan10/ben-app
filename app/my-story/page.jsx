@@ -6,9 +6,8 @@ import '@/styles/modules/background-img.scss'
 import BenTimeline from '@/components/ben-timeline'
 export default function MyStoryPage() {
   return (
-    <>
-      
-      <BackgroundImage imgSrc={myStoryHeroImg} adjustImageStyleTailwindString='h-66vh mobile:h-33vh object-fill'/>
+    <> 
+      <BackgroundImage imgSrc={myStoryHeroImg} adjustImageStyleTailwindString='h-66vh mobile:h-33vh object-fill' />
       <PageHero title={'הסיפור שלי'} subTitle={'בן אברהם רומנו ז"ל'} 
         absoluteAdjustmentTailwindString={'top-3vh -right-3vw mobile:right-3vw'}
         adjustTitleTailwindString={'mobile:w-27vw'}

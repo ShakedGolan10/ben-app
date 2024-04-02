@@ -32,7 +32,7 @@ const onChange = ({target}) => {
 
   return (
     <>
-    <nav className='app-footer h-25vh w-fullvw bg-bgc-app-footer flex flex-row items-center justify-center gap-5vw p-2vw'>
+    <nav className='app-footer h-25vh w-100vw bg-bgc-app-footer flex flex-row items-center justify-center gap-5vw p-2vw'>
       <div className='mobile:hidden logo-container h-logo-img-h w-logo-img-w'>
         <Image className='bg-gray-500' src={benLogo} alt='page-logo' />
       </div>

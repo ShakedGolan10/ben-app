@@ -11,12 +11,12 @@ import { useRouter } from 'next/navigation'
 export default function InHisWay() {
 
     const router = useRouter()
-
+        // Todo: Make the birds images absolute and orgenize them
     return (
     <div className={`bg-bgc-white h-screen flex flex-col justify-around items-center relative max-h-70vh mobile:py-8`}>
         <section className='images-container absolute w-full h-full flex flex-col justify-between'>`
             <Image src={birdsPic} alt='birds in the background' id='up-photo' className='w-50vw h-full object-contain transform translate-x-[-35vw] translate-y-[-5vh] '/>
-            <Image src={birdsPic} alt='birds in the background' id='bottom-photo' className='w-full h-full object-contain '/>
+            <Image src={birdsPic} alt='birds in the background' id='bottom-photo' className='w-50vw h-full object-contain '/>
         </section>
         <section className='in-his-way-section h-full z-[2] flex flex-col justify-around items-center gap-2vh'>
         <article className='headlines flex flex-col gap-2vh'>
