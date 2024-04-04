@@ -1,6 +1,6 @@
 import React from 'react'
 import TimelineElement from './timeline-element'
-import { benTimeline } from '@/constants'
+import { benTimelineInfo } from '@/constants'
 import butterfly from '@/assets/imgs/timeline-butterfly.png'
 import flower from '@/assets/imgs/timeline-flower.png'
 import bird from '@/assets/imgs/timeline-bird.png'
@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function BenTimeline() {
 
   const returnAdjustGreenLineImageTailwindString = (index) => {
-      if (index === benTimeline.length -1) return 'hidden'
+      if (index === benTimelineInfo.length -1) return 'hidden'
       else if (index % 2 !== 0) return 'rotatex'
       return ''
     }
@@ -24,7 +24,7 @@ export default function BenTimeline() {
         </p>
         
         
-        {benTimeline.map((article, idx) => {
+        {benTimelineInfo.map((article, idx) => {
           return <TimelineElement imgSrc={article.imgSrc} paragraph={article.paragraph} 
           adjustGreenLineImageTailwindString={returnAdjustGreenLineImageTailwindString(idx)}
           adjustArticleTailwindString={returnAdjustArticleTailwindString(idx)}

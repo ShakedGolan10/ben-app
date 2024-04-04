@@ -1,17 +1,17 @@
 import About from "@/components/about";
 import BenBlogTeaser from "@/components/ben-blog-teaser";
-import PageHero from "@/components/page-hero";
 import HisWayTeaser from "@/components/his-way-teaser";
 import BackgroundImage from "@/components/background-img";
 import StoriesSection from "@/components/stories-sections";
-import heroImg from '@/assets/imgs/benHeroImg.jpeg'
+import heroImg from '@/assets/imgs/home-hero-img.jpeg'
 import nameImg from '@/assets/imgs/ben-name-title.png'
+import HomePageHero from "@/components/home-page-hero";
 
 export default function HomePage() {
   return (
     <>
-      <BackgroundImage imgSrc={heroImg} adjustImageStyleTailwindString={'lg:object-heroImg '}/>
-      <PageHero subTitle={'הילד עם החיוך הנצחי...'} titleImgSrc={nameImg} absoluteAdjustmentTailwindString={'-top-10vh right-0vw'}/>
+      <BackgroundImage imgSrc={heroImg} adjustImageStyleTailwindString={'lg:object-heroImg object-cover'}/>
+      <HomePageHero subTitle={'הילד עם החיוך הנצחי...'} titleImgSrc={nameImg} absoluteAdjustmentTailwindString={'-top-10vh right-0vw'}/>
       <About />
       <StoriesSection />
       <HisWayTeaser />

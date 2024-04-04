@@ -26,7 +26,8 @@ const config = {
       screens: {
         'mobile': { 'max': '640px' },
         'smMobile': { 'max': '420px' },
-        '1100px': { 'max': '1100px' }
+        '1100px': { 'max': '1100px' },
+        '900px': { 'max': '900px' }
         // => @media (max-width: 639px) { ... }
       },
 
