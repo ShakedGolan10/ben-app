@@ -1,18 +1,15 @@
+import { NextResponse } from "next/server";
+
 const Airtable = require("airtable");
 
 const base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base(
   process.env.BASE_NAME
 );
 
-export const GET = async (req, res) => {
-  if (req.method !== "GET") {
-    res.status(405).send("Method Not Allowed");
-    return;
-  }
+export async function GET(req) {
 
   try {
     let stories = [];
-
     await base("סיפורים")
       .select({ view: "מאושרים" })
       .eachPage((records, fetchNextPage) => {
@@ -29,11 +26,12 @@ export const GET = async (req, res) => {
         });
         fetchNextPage();
       });
+    console.log('=>>>>>', stories)
+    return new NextResponse(JSON.stringify(stories), { status: 200 })
 
-    res.send(stories);
   } catch (error) {
     console.error("Error fetching data from Airtable:", error);
-    res.status(500).send("Internal Server Error");
+    return new NextResponse("Internal Server Error", { status: 500 })
   }
 };
 

@@ -11,7 +11,8 @@ export default function HomePage() {
   return (
     <>
       <BackgroundImage imgSrc={heroImg} adjustImageStyleTailwindString={'lg:object-heroImg object-cover'}/>
-      <HomePageHero subTitle={'הילד עם החיוך הנצחי...'} titleImgSrc={nameImg} absoluteAdjustmentTailwindString={'-top-10vh right-0vw'}/>
+      <HomePageHero subTitle={'הילד עם החיוך הנצחי...'} titleImgSrc={nameImg} buttonTitle="להוספת סיפור משותף" 
+      mainArticleAdjustmentTailwindString={'-top-10vh right-0vw'} subTitleAdjustmentTailwindString="smMobile:hidden"/>
       <About />
       <StoriesSection />
       <HisWayTeaser />

@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const navbarLinks = [
     { id: 2, label: "הסיפור שלי", link: "/my-story", icon: null },
-    { id: 3, label: "הסיפורים שלנו", link: "/stories", icon: null },
+    { id: 3, label: "הסיפורים שלנו", link: "/memories", icon: null },
     { id: 4, label: "התנדבויות", link: "/volunteer", icon: null },
     { id: 5, label: "הבלוג של בן", link: "/blog", icon: null },
   ];

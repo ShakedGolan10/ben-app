@@ -9,7 +9,7 @@ export default function MyStoryPage() {
     <> 
       <BackgroundImage imgSrc={myStoryHeroImg} adjustImageStyleTailwindString='h-66vh mobile:h-33vh object-fill' />
       <PageHero title={'הסיפור שלי'} subTitle={'בן אברהם רומנו ז"ל'} 
-        absoluteAdjustmentTailwindString={'top-3vh -right-3vw mobile:right-3vw'}
+        mainArticleAdjustmentTailwindString={'top-3vh -right-3vw mobile:right-3vw'}
         adjustTitleTailwindString={'mobile:w-27vw'}
         />
        <BenTimeline />
