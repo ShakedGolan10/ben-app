@@ -14,8 +14,8 @@ export default function MemoriesPage() {
     buttonAdjustmentTailwindString='900px:-top-8vh mobile:text-sm' mainArticleAdjustmentTailwindString='h-max top-15vh mobile:top-10vh'
     subTitleAdjustmentTailwindString='mobile:text-md' />
     <article className='memories-page-heading flex flex-row justify-center items-center gap-5vw'>
-        <h1 className="text-center text-headline-font-color font-bold text-4xl ">אני לא משוגע אני נורמלי בסטנדרטים שלי</h1>
-        <Image src={smileyByBen} className='h-[35px] w-[40px]' />
+        <h1 className="text-center text-headline-font-color font-bold text-4xl mobile:text-medium">אני לא משוגע אני נורמלי בסטנדרטים שלי</h1>
+        <Image src={smileyByBen} className='h-[35px] w-[40px]' alt='smiley img'/>
     </article>
     <MemoriesSection />
   </>

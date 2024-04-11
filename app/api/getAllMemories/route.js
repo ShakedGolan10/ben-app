@@ -26,7 +26,6 @@ export async function GET(req) {
         });
         fetchNextPage();
       });
-    console.log('=>>>>>', stories)
     return new NextResponse(JSON.stringify(stories), { status: 200 })
 
   } catch (error) {

@@ -9,7 +9,7 @@ export default function VolunteerPage() {
 
     return (
         <> 
-      <BackgroundImage imgSrc={volunteerHeroImg} adjustImageStyleTailwindString='h-66vh mobile:h-33vh object-contain' />
+      <BackgroundImage imgSrc={volunteerHeroImg} adjustImageStyleTailwindString='h-66vh mobile:h-33vh object-cover' />
       <section className='ben-volunteer-page flex flex-col justify-around items-center gap-15vh mb-5vh'>
          <p className={`font-bold max-w-fit text-center self-center text-2xl text-headline-font-color`}>
               {'"את המצווה שעשיתי לך תעביר הלאה.."'}

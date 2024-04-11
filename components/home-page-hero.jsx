@@ -18,14 +18,14 @@ mainArticleAdjustmentTailwindString = '', buttonAdjustmentTailwindString = '', s
         <Image src={titleImgSrc} alt='hero-name' className='object-cover h-33vh mobile:h-27vh max-w-25vh'/>
       </div>}
       {subTitle && <p className={`font-bold max-w-fit text-center text-4xl mobile:text-2xl text-headline-font-color relative bottom-10vh 
-      mobile:bottom-9vh smMobile:text-md ${subTitleAdjustmentTailwindString}`}>
+      mobile:bottom-9vh smMobile:text-medium ${subTitleAdjustmentTailwindString}`}>
         {subTitle}
       </p>}
-      <Button className={`font-bold -top-8vh 900px:top-[23%] min-w-fit
+      {buttonTitle && <Button className={`font-bold -top-8vh 900px:top-[23%] min-w-fit
        bg-bgc-nav-bar-upper text-center text-lg
         text-headline-font-color p-[8%] ${buttonAdjustmentTailwindString}`} onPress={onOpen}>
         {buttonTitle}
-      </Button>
+      </Button>}
       <AddStoryForm isOpen={isOpen} onOpenChange={onOpenChange} />
       </article>
  )
