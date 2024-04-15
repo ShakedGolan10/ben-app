@@ -1,6 +1,8 @@
 import BackgroundImage from '@/components/background-img'
 import benInDesert from '@/assets/imgs/ben-in-desert.jpeg'
 import PageHero from '@/components/page-hero'
+import BlogSection from '@/components/ben-blog-page/blog-section'
+
 export default function BlogPage() {
   return (
     <>
@@ -9,6 +11,7 @@ export default function BlogPage() {
         <p className={`font-bold max-w-fit text-center self-center text-2xl text-headline-font-color`}>
               {'“מחר יום חדש אי אפשר לדעת מה יקרה, תחיו את הרגע וכשיגיע מחר תתעסקו בו”'}
         </p>
+        <BlogSection />
     </>
   )
 }

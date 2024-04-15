@@ -3,7 +3,7 @@ import myStoryHeroImg from '@/assets/imgs/my-story-hero-img.png'
 import BackgroundImage from '@/components/background-img'
 import PageHero from '@/components/page-hero'
 import '@/styles/modules/background-img.scss'
-import BenTimeline from '@/components/ben-timeline'
+import BenTimeline from '@/components/my-story-page/ben-timeline'
 export default function MyStoryPage() {
   return (
     <> 

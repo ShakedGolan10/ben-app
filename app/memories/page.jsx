@@ -4,7 +4,7 @@ import MemoPageHeroImg from '@/assets/imgs/memories-page-hero-img.png'
 import HomePageHero from '@/components/home-page-hero'
 import smileyByBen from '@/assets/imgs/smiley.png'
 import Image from 'next/image'
-import MemoriesSection from '@/components/memories-section'
+import MemoriesSection from '@/components/memories-page/memories-section'
 
 export default function MemoriesPage() {
   return (

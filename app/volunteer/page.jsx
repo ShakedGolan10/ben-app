@@ -2,7 +2,7 @@ import React from 'react'
 import volunteerHeroImg from '@/assets/imgs/volunteer-hero-img.png'
 import BackgroundImage from '@/components/background-img'
 import '@/styles/modules/background-img.scss'
-import VolunteerPageElement from '@/components/volunteer-page-element'
+import VolunteerPageElement from '@/components/volunteer-page/volunteer-page-element'
 import { benVolunteerInfo } from '@/constants'
 
 export default function VolunteerPage() {

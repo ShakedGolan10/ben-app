@@ -2,7 +2,7 @@
 import { Button, useDisclosure } from '@nextui-org/react';
 import Image from 'next/image'
 import React, {  } from 'react'
-import AddStoryForm from './add-story-form';
+import AddStoryForm from './my-story-page/add-story-form';
 
 
 

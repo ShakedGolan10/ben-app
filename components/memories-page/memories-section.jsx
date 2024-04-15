@@ -1,9 +1,9 @@
 'use client'
 import { fetchService } from '@/services/fetch.service';
 import React, { useEffect, useState } from 'react'
-import ImgsGrid from './imgs-grid';
+import ImgsGrid from '../imgs-grid';
 import MemoryModal from './memory-modal';
-import { useDisclosure } from '@nextui-org/react';
+import { Spinner, useDisclosure } from '@nextui-org/react';
 import { FaSearch } from 'react-icons/fa';
 
 export default function MemoriesGrid() {
@@ -13,12 +13,12 @@ export default function MemoriesGrid() {
   const [memories, setMemories] = useState([]);
 
   useEffect(() => {
-    const getData = async () => {
+    const getMemoriesData = async () => {
       let res = await fetchService.GET('getAllMemories')
-      res = res.filter((t) => t.files)
+      // res = res.filter((t) => t.files)
       setMemories(res);
     };
-    getData();
+    getMemoriesData();
   }, [])
 
   const handleSearch = async (ev) => {
@@ -33,9 +33,6 @@ export default function MemoriesGrid() {
       setMemories(filteredMemories);
     }
   }
-  useEffect(() => {
-    console.log('----->', memories)
-  }, [memories])
 
   const toggleMemory = async (memoryId) => {
     let memory = memories.find((memory)=> memory.id === memoryId)
@@ -56,7 +53,7 @@ export default function MemoriesGrid() {
           <FaSearch className='absolute top-[25%] right-[90%] smMobile:hidden' />
       </div>
     </div>
-    {memories && <ImgsGrid images={memories} numOfImagesPerRow={'3'} toggleMemory={toggleMemory}  />}
+    {(memories.length) ? <ImgsGrid images={memories} numOfImagesPerRow={'3'} toggleMemory={toggleMemory}  /> : <Spinner className='my-10vh' />}
     <MemoryModal memory={selectedMemory} isOpen={isOpen} onClose={onClose} onOpenChange={onOpenChange} />
     </>
   )

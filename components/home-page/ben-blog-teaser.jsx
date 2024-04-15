@@ -24,7 +24,7 @@ export default function BenBlogTeaser() {
       <Image src={benInDesert} alt="Image of ben" className="w-80vw h-35vh mobile:h-20vh mobile:w-40vw rounded-lg object-cover object-center" />
     </div>
     <div className="flex flex-col items-center justify-center">
-            <button onClick={()=> router.push('/ben-blog')} className="text-center
+            <button onClick={()=> router.push('/blog')} className="text-center
              text-headline-font-color text-lg p-4 font-medium 
              bg-bgc-buttons  rounded-xl">לבלוג של בן</button>
           </div> 
