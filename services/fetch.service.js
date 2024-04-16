@@ -38,14 +38,14 @@ const api = async (endpoint, method = 'GET', data = null) => {
         const res = await fetch(request)
         return await res.json()
     } catch (error) {
-        // console.log(`Had Issues ${method}ing to the backend, endpoint: ${endpoint}, with data: `, data)
-        // if (error.response && error.response.status === 401) { // 401 means luck of authentication and that why we clear the session storage and redirect
-        // sessionStorage.clear()
-        // window.location.assign('/')
-        // return null
+        console.log(`Had Issues ${method}ing to the backend, endpoint: ${endpoint}, with data: `, data)
+        if (error.response && error.response.status === 401) { // 401 means luck of authentication and that why we clear the session storage and redirect
+            sessionStorage.clear()
+            window.location.assign('/')
+            return null
+        }
+        throw error
     }
-    // throw error
-    // }
 }
 
 
