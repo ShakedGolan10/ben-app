@@ -8,12 +8,11 @@ const base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base(
 
 export const GET = async (req, res) => {
     try {
-        console.log('reached Server!!!!!!')
         const fetchData = (tableName) => {
             return new Promise((resolve, reject) => {
                 base(tableName).select().all((err, records) => {
                     if (err) {
-                        console.error("kkakkakakakakkakakak", err);
+                        console.error("Error fetching data:", err);
                         reject(err);
                         return;
                     }
