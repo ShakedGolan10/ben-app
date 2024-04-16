@@ -7,15 +7,14 @@ const base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base(
 );
 
 export async function GET(req) {
-  console.log('The airtable token--->', process.env.AIRTABLE_TOKEN)
-  console.log('The BASE_NAME--->', process.env.BASE_NAME)
-  console.log('The base const ----->', base)
+
   try {
     let stories = [];
     await base("סיפורים")
       .select({ view: "מאושרים" })
       .eachPage((records, fetchNextPage) => {
         records.forEach((record) => {
+          console.log('Step 1 complete! =====)', record)
           const story = {
             id: record.get("מזהה"),
             text: record.get("תיאור"),
@@ -26,6 +25,7 @@ export async function GET(req) {
           };
           stories.push(story);
         });
+        console.log('Step 2 complete! =====)', stories)
         fetchNextPage();
       });
     return new NextResponse(JSON.stringify(stories), { status: 200 })
