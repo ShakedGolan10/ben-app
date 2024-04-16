@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image';
-import benTalPic from '@/assets/imgs/ben-pic-1.png'
+import benTalPic from '@/assets/imgs/ben-tal.jpg'
 import benGroupPic from '@/assets/imgs/ben-group-pic-ramot.jpg'
 import benPic from '@/assets/imgs/ben-pic-1.png'
 import benHeartHandwrite from '@/assets/imgs/ben-heart-handwrite.png'
