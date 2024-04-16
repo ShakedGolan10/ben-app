@@ -13,6 +13,7 @@ export async function GET(req) {
     await base("סיפורים")
       .select({ view: "מאושרים" })
       .eachPage((records, fetchNextPage) => {
+        console.log('the records! ====>', records)
         records.forEach((record) => {
           console.log('Step 1 complete! =====)', record)
           const story = {
