@@ -7,7 +7,8 @@ const base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base(
 );
 
 export async function GET(req) {
-
+  console.log('------------<><><><<><><><< ====> In server')
+  console.error('------------<><><><<><><><< ====> In server')
   try {
     let stories = [];
     await base("סיפורים")
