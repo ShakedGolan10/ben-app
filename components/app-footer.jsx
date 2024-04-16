@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
-import benLogo from '@/assets/imgs/ben-tal.jpg'
+import benLogo from '@/assets/imgs/ben-pic-1.png'
 import '@/styles/modules/navbar.scss'
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
