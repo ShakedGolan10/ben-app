@@ -13,7 +13,7 @@ export const GET = async (req, res) => {
             return new Promise((resolve, reject) => {
                 base(tableName).select().all((err, records) => {
                     if (err) {
-                        console.error("Error fetching data:", err);
+                        console.error("kkakkakakakakkakakak", err);
                         reject(err);
                         return;
                     }
