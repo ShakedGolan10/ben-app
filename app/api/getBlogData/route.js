@@ -8,6 +8,7 @@ const base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base(
 
 export const GET = async (req, res) => {
     try {
+        console.log('reached Server!!!!!!')
         const fetchData = (tableName) => {
             return new Promise((resolve, reject) => {
                 base(tableName).select().all((err, records) => {
@@ -43,6 +44,6 @@ export const GET = async (req, res) => {
         return new NextResponse(JSON.stringify(arrayData), { status: 200 })
     } catch (error) {
         console.error("Server error:", error);
-        return new NextResponse("Internal Server Error", { status: 500 })
+        return new NextResponse(`Internal Server Error, ${error}`, { status: 500 })
     }
 }
