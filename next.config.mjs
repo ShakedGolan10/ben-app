@@ -2,9 +2,9 @@
 const nextConfig = {
     swcMinify: true,
     reactStrictMode: false,
-    // experimental: {
-    //     serverMinification: false,
-    // },
+    experimental: {
+        serverMinification: false,
+    },
     images: {
         remotePatterns: [
             {

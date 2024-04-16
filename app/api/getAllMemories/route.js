@@ -10,6 +10,7 @@ export async function GET(req) {
 
   try {
     let stories = [];
+    console.log('the startttttt! ====>', base)
     await base("סיפורים")
       .select({ view: "מאושרים" })
       .eachPage((records, fetchNextPage) => {
