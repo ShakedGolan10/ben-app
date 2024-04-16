@@ -4,3 +4,10 @@
         max-width: max-content;
     }
 }
+
+button {
+    &.react-multiple-carousel__arrow {
+
+        z-index: 15;
+    }
+}

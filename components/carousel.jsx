@@ -4,10 +4,19 @@ import '@/styles/modules/carousel.scss'
 // import Image from 'next/image';
 import { Image } from '@nextui-org/react' 
 import Carousel from "react-multi-carousel";
+import { useEffect, useState } from 'react';
 
 
-export default function CarouselCmp({srcImg = []}) {
+export default function CarouselCmp({data, toggleModal, idx}) {
 
+
+  const [carouselData, setCarouselData] = useState([])
+    useEffect(()=> {
+      const imgsSrc = data.content.map((t) => {
+        return {id: t.id ,src: t.image}
+      })
+      setCarouselData(imgsSrc)
+    },[])
 
   return (
     <Carousel
@@ -63,14 +72,15 @@ export default function CarouselCmp({srcImg = []}) {
     slidesToSlide={3}
     swipeable
   >
-    {srcImg.map((src, idx)=> {
+    {carouselData.map((content)=> {
       return (
       <Image
       alt="Appending currency sign to a purchase form in your e-commerce site using plain JavaScript."
-      src={src.src}
+      src={content.src}
       radius='full'
-      key={idx}
-      className='w-15vw h-15vw object-cover hover:scale-105 hover:cursor-pointer '
+      key={content.id}
+      className='w-15vw h-15vw object-cover hover:scale-105 hover:cursor-pointer mobile:h-25vw mobile:w-25vw'
+      onClick={()=> toggleModal(content.id, idx)}
       />
   )
     })}

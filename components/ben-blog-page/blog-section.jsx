@@ -9,6 +9,8 @@ import img4 from '@/assets/imgs/ben-pic-1.png'
 import img5 from '@/assets/imgs/example-img-1.jpeg'
 
 import CarouselCmp from '../carousel';
+import { fetchService } from '@/services/fetch.service';
+import BlogModal from './blog-modal';
 
 export default function BlogSection() {
 
@@ -16,40 +18,21 @@ export default function BlogSection() {
   const [blogData, setBlogData] = useState([])
   const [contetSelected, setContentSelected] = useState(undefined)
   
-  const toggleModal = (title) => {
-    const contentIdx = blogData.findIndex((data) => data.title === title)
-    setContentSelected(blogData[contentIdx])
+  const toggleModal = (id,idx) => {
+    const contentIdx = blogData[idx].content.findIndex((data) => data.id === id )
+    setContentSelected(blogData[idx].content[contentIdx])
     onOpen()
   }
 
   useEffect(() => {
     const getBlogData = async () => {
-        // let res = await fetchService.GET('getBlog')
+        let res = await fetchService.GET('getBlogData')
         // res = res.filter((t) => t.files)
-        setBlogData([{
-        title: 'המתכונים של בן' ,
-        content: [
-          {
-            contentTitle: 'פסטה ברוטב עגבניות',
-            image: [benShirt.src], 
-            text: 'paaaaaaa paaaaaaaaaaaaa paaaaaaaaaap apap appapapap p papa p p pppap p apa pa pappa kdopjs jn n sjfsjjjj j jjaj ap jk j jJAJSJAJ J J JASJJJJJ J J J J JJJJJJ'
-          }
-        ]
-    },  
-    {
-      title: 'הבנות של בן' ,
-      content: [
-        {
-          contentTitle: 'פסטה ברוטב עגבניות',
-          image: [benShirt.src], 
-          text: 'paaaaaaa paaaaaaaaaaaaa paaaaaaaaaap apap appapapap p papa p p pppap p apa pa pappa kdopjs jn n sjfsjjjj j jjaj ap jk j jJAJSJAJ J J JASJJJJJ J J J J JJJJJJ'
-        }
-      ]
-  }
-  ]);
+        setBlogData(res);
       };
       getBlogData();
   },[])
+
 
 
 
@@ -58,11 +41,32 @@ export default function BlogSection() {
     {(blogData.length) ? <section className='flex flex-col gap-5vh  overflow-hidden'>
       {blogData.map((data, idx) => {
         return (
-        <BlogElement key={idx} toggleModal={toggleModal} data={data}/>
+        <BlogElement key={idx} toggleModal={toggleModal} data={data} idx={idx}/>
         ) 
       })}
     </section> : <Spinner className='my-10vh'/>}
-        {/* <BlogModal blogContent={contetSelected} isOpen={isOpen} onClose={onClose} onOpenChange={onOpenChange} /> */}
+        <BlogModal blogContent={contetSelected} isOpen={isOpen} onClose={onClose} onOpenChange={onOpenChange} />
     </>
   )
 }
+// [{
+//   title: 'המתכונים של בן' ,
+//   content: [
+//     {
+//       contentTitle: 'פסטה ברוטב עגבניות',
+//       image: [benShirt.src], 
+//       text: 'paaaaaaa paaaaaaaaaaaaa paaaaaaaaaap apap appapapap p papa p p pppap p apa pa pappa kdopjs jn n sjfsjjjj j jjaj ap jk j jJAJSJAJ J J JASJJJJJ J J J J JJJJJJ'
+//     }
+//   ]
+// },  
+// {
+// title: 'הבנות של בן' ,
+// content: [
+//   {
+//     contentTitle: 'פסטה ברוטב עגבניות',
+//     image: [benShirt.src], 
+//     text: 'paaaaaaa paaaaaaaaaaaaa paaaaaaaaaap apap appapapap p papa p p pppap p apa pa pappa kdopjs jn n sjfsjjjj j jjaj ap jk j jJAJSJAJ J J JASJJJJJ J J J J JJJJJJ'
+//   }
+// ]
+// }
+// ]

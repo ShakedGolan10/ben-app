@@ -13,9 +13,9 @@ export default function AppFooter() {
 
   const navbarLinks = [
     { id: 2, label: "הסיפור שלי", link: "/my-story", icon: null },
-    { id: 3, label: "הסיפורים שלנו", link: "/our-stories", icon: null },
-    { id: 4, label: "התנדבויות", link: "/bens-charity", icon: null },
-    { id: 5, label: "הבלוג של בן", link: "/bens-blog", icon: null },
+    { id: 3, label: "הסיפורים שלנו", link: "/memories", icon: null },
+    { id: 4, label: "התנדבויות", link: "/volunteer", icon: null },
+    { id: 5, label: "הבלוג של בן", link: "/blog", icon: null },
   ];
 
   const [formEmail, setFormEmail] = useState('')

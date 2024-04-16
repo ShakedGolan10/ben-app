@@ -17,7 +17,7 @@ export const GET = async (req, res) => {
                         return;
                     }
 
-                    const data = records.map((record) => {
+                    let data = records.map((record) => {
                         return {
                             id: record.fields["מזהה"],
                             image: record.fields["תמונות"][0].url,
@@ -27,6 +27,7 @@ export const GET = async (req, res) => {
                             link: record.fields["קישור"] // This field is specific to playlist table
                         };
                     });
+                    data = { title: tableName, content: [...data] }
                     resolve(data);
                 });
             });
@@ -38,7 +39,8 @@ export const GET = async (req, res) => {
             fetchData("מסעדות"),
             fetchData("פלייליסט")
         ]);
-        return new NextResponse(JSON.stringify([...arrayData]), { status: 200 })
+
+        return new NextResponse(JSON.stringify(arrayData), { status: 200 })
     } catch (error) {
         console.error("Server error:", error);
         return new NextResponse("Internal Server Error", { status: 500 })

@@ -15,16 +15,13 @@ export default function BlogModal({blogContent ,isOpen, onClose, onOpenChange}) 
                 <p className="text-medium font-medium"> 
                   {blogContent.text}
                 </p>
-                <div className="imgs-container flex flex-row justify-between items-center gap-2">
-                {blogContent.image.map((image,idx) => {
-                  return <Image
+                {/* <div className="imgs-container flex flex-row justify-between items-center gap-2"> */}
+                   <Image
                     alt="story-img"
-                    key={idx}
-                    src={image.src}
-                    className="min-w-15vw min-h-15vw"
+                    src={blogContent.image}
+                    className="w-15vw h-15vw object-cover"
                   />
-                })}
-                </div>
+                {/* </div> */}
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
