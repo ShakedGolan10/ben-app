@@ -26,7 +26,7 @@ export default function BenBlogTeaser() {
     <div className="flex flex-col items-center justify-center">
             <button onClick={()=> router.push('/blog')} className="text-center
              text-headline-font-color text-lg p-4 font-medium 
-             bg-bgc-buttons  rounded-xl">לבלוג של בן</button>
+             bg-bgc-nav-bar-upper  rounded-xl">לבלוג של בן</button>
           </div> 
     </section>
   </div>

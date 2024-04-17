@@ -37,7 +37,7 @@ export default function HisWayTeaser() {
     <div className="flex flex-col items-center justify-center relative">
             <button onClick={()=> router.push('/volunteer')} className="text-center
              text-headline-font-color text-lg p-4 font-medium 
-            bg-bgc-buttons  rounded-xl">להנצחות והתנדבויות</button>
+            bg-bgc-nav-bar-upper  rounded-xl">להנצחות והתנדבויות</button>
           </div> 
     </section>
   </div>

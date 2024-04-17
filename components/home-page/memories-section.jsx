@@ -27,7 +27,7 @@ export default function MemoriesSection() {
     
           {/* Hebrew text and heart icon below the pictures */}
           <div className="flex flex-col items-center justify-center relative">
-            <button onClick={()=> router.push('/memories')} className="text-center text-headline-font-color text-lg p-4 font-medium mobile:bg-bgc-white bg-bgc-buttons  rounded-xl">לכל הזכרונות והסיפורים</button>
+            <button onClick={()=> router.push('/memories')} className="text-center text-headline-font-color text-lg p-4 font-medium mobile:bg-bgc-white bg-bgc-nav-bar-upper rounded-xl">לכל הזכרונות והסיפורים</button>
             <Image src={benHeartHandwrite} alt='ben heart handwrite' className='mobile:hidden absolute -top-2vh left-8vw 1100px:left-23vw w-15vw h-15vh object-cover'/>
             <Image src={benHeartHandwrite} alt='ben heart handwrite' className='mobile:hidden absolute -top-10vh left-8vw 1100px:left-23vw w-20vw h-20vh object-cover'/>
           </div>        
