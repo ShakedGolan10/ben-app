@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
-import benLogo from '@/assets/imgs/ben-pic-1.png'
+import benLogo from '@/assets/imgs/ben-name-title.png'
 import '@/styles/modules/navbar.scss'
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -34,7 +34,7 @@ const onChange = ({target}) => {
     <>
     <nav className='app-footer h-25vh full bg-bgc-app-footer flex flex-row items-center justify-center gap-5vw p-2vw'>
       <div className='mobile:hidden logo-container h-logo-img-h w-logo-img-w'>
-        <Image className='bg-gray-500' src={benLogo} alt='page-logo' />
+        <Image  src={benLogo} alt='page-logo' />
       </div>
       <div className='mobile:hidden links-div flex flex-col justify-around items-center gap-1vw'>
         {navbarLinks.map(({ id, label, link }) => (

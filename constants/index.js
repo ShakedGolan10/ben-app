@@ -5,7 +5,13 @@ import timelineImg4 from '@/assets/imgs/timeline-img-4.png'
 import timelineImg5 from '@/assets/imgs/timeline-img-5.png'
 import timelineImg6 from '@/assets/imgs/timeline-img-6.png'
 
-import volunteerPageImg1 from '@/assets/imgs/volunteer-page-img-1.jpg'
+import volunteerPageImgPolice from '@/assets/imgs/volunteer-img-1.jpg'
+import volunteerPageImg2 from '@/assets/imgs/volunteer-img-2.jpg'
+import volunteerPageImgMada from '@/assets/imgs/volunteer-img-3.jpg'
+import volunteerPageImg4 from '@/assets/imgs/volunteer-img-4.jpg'
+import volunteerPageImg5 from '@/assets/imgs/volunteer-img-5.jpg'
+import volunteerPageImg6 from '@/assets/imgs/volunteer-img-6.jpg'
+import volunteerPageImg7 from '@/assets/imgs/volunteer-img-7.jpg'
 
 export const addBreakInString = (string) => {
     string = string.replaceAll(/(?<!\.)\.(?!\.)/g, ".<br>")
@@ -51,13 +57,13 @@ const benTimelineInfo = [
 const benVolunteerInfo = [
     {
         title: 'שלח - משצים',
-        imgSrc: volunteerPageImg1,
+        imgSrc: volunteerPageImg2,
         paragraph: addBreakInString(`בתקופת התיכון בן הצטרף "לתנועת הנוער משצי"ם" (מדרכי של"ח צעירים).  
         בן היה פעיל בפעילויות, לפני כל פעילות היה מגיע לפני כולם כדי לסייע למורה, לסחוב ציוד ולדאוג לכולם. בן אהב את התנועה וגם כשסיים את לימודיו המשיך להתנדב ולצאת איתם למסעות, גם כחובש.`)
     },
     {
         title: 'משטרת ישראל',
-        imgSrc: volunteerPageImg1,
+        imgSrc: volunteerPageImgPolice,
         paragraph: addBreakInString(`את אהבתו של בן למשטרת ישראל ספג עוד בילדותו מאביו ולאחר מכן מאחיו יוסי.   
         בן העריץ את אביו ואחיו יוסי בדרכם וכשסוף סוף הגיע לתיכון היה לו ברור שגם הוא מתנדב למשטרה.  
         יוסי ובן התנדבו יחד במשמר האזרחי ויצאו לסיורים משותפים מחסומים ובדיקות שיכרות. 
@@ -65,14 +71,14 @@ const benVolunteerInfo = [
     },
     {
         title: 'מגן דוד אדום',
-        imgSrc: volunteerPageImg1,
+        imgSrc: volunteerPageImgMada,
         paragraph: addBreakInString(`מד"א, היא ההתנדבות המועדפת !
         בן הלך ללימודי קורס קבלה למד"א, אך לא עבר את הקורס בפעם הראשונה. כמובן שלא ויתר התעקש ולמד בחירוף נפש עד שעבר והפך לחובש ולאחר מכן לנהג אמבולנס. 
         בן אהב את תפקידו כחובש במד"א, כי האמין שהצלת חיים תלויה ברוב הפעמים במענה הראשוני שניתן לאדם,  לכן בכל פעם שהיה יוצא מהבית, תיק מד"א עשיר במיוחד היה צמוד אליו. לדבריו: "סכנות ופגיעות יכולות להיות בכל רגע ובכל מקום, ואני צריך להיות מוכן לכל תרחיש".`)
     },
     {
         title: 'מחייכים אל החיים',
-        imgSrc: volunteerPageImg1,
+        imgSrc: volunteerPageImg4,
         paragraph: addBreakInString(`מחייכים אל החיים, 
         התנדבות למען ילדים עם צרכים מיוחדים ומשפחותיהם, שמטרתה לגרום לרגעי כייף ואושר למשפחות "בזכות הילד המיוחד".   
         התנדבות שכל המשפחה התנדבה בה. ובכל מקום שיש התנדבות, בן הראשון לתרום ולהתנדב.`)
@@ -80,7 +86,7 @@ const benVolunteerInfo = [
     },
     {
         title: 'יום המעשים הטובים',
-        imgSrc: volunteerPageImg1,
+        imgSrc: volunteerPageImg5,
         paragraph: addBreakInString(`יום המעשים הטובים 
         בכל 19 למרס בכל שנה, בן היה מתנדב בכל פעילות שהתבקש. 
         צביעת מתנסים, הפנינג משפחות (דרך מחייכים אל החיים) וכל פעילות שהייתה מזדמנת בדרכו. 
@@ -89,10 +95,18 @@ const benVolunteerInfo = [
     },
     {
         title: 'כנפיים של קרמבו',
-        imgSrc: volunteerPageImg1,
+        imgSrc: volunteerPageImg6,
         paragraph: addBreakInString(`כנפיים של קרמבו
         ההכרות של בן עם כנפיים של כרמבו הייתה דרך שריתה ממרוט שפועלת ועובדת בעמותה זמן רב. 
         בכל פעילות שנצטרכה סיוע בהתנדבות, פנתה לבן והוא היה מתייצב וממתין למשימות.`)
+    },
+
+    {
+        title: 'בן אלוף הפנצרים ושרותי דרך',
+        imgSrc: volunteerPageImg7,
+        paragraph: addBreakInString(`אחד הדברים המדהימים המאפיינים את בן, הוא הסיוע בכל רגע, בכל שעה ובכל מקום שזקוקים לעזרה. 
+        כשרכב עמד בצד הכביש, בן היה מיד נעצר אחריו ושואל האם צריך סיוע. 
+        כמובן שהכל ללא תמורה, אך הייתה בקשה אחת : את המצווה / העזרה שנתתי לך תמשיך ותסייע לאדם הזקוק לה. `)
     },
 ]
 

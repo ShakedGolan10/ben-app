@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import React from 'react'
 import birdsPic from '@/assets/imgs/birds.png'
-import moris from '@/assets/imgs/moris.jpeg'
-import volunteer from '@/assets/imgs/volunteer.jpeg'
-import benShirt from '@/assets/imgs/ben-shirt.jpg'
+import volunteerImg1 from '@/assets/imgs/volunteer-img-1.jpg'
+import volunteerImg2 from '@/assets/imgs/volunteer-img-2.jpg'
+import volunteerImg3 from '@/assets/imgs/volunteer-img-3.jpg'
 import { useRouter } from 'next/navigation'
 
 
@@ -27,12 +27,11 @@ export default function HisWayTeaser() {
         </article>
     <div className=" rounded-lg flex mobile:flex-col gap-2vw ">
       {/* First picture */}
-      <Image src={moris} alt="Image of ben and tal" className="special-border-1 w-20vw h-35vh mobile:h-15vh mobile:object-contain mobile:w-40vw rounded-lg object-cover" />
+      <Image src={volunteerImg1} alt="Image of ben and tal" className="special-border-1 w-20vw h-35vh mobile:h-15vh mobile:object-contain mobile:w-40vw rounded-lg object-cover" />
       {/* Middle picture */}
-      <Image src={volunteer} alt="Image of ben" className=" w-20vw h-35vh mobile:h-15vh mobile:object-contain mobile:w-40vw rounded-lg object-cover object-top" />
-
+      <Image src={volunteerImg2} alt="Image of ben" className=" w-20vw h-35vh mobile:h-15vh mobile:object-contain mobile:w-40vw rounded-lg object-cover object-top" />
       {/* Third picture */}
-      <Image src={benShirt} alt="Image of ben friends" className="special-border-2 w-20vw h-35vh mobile:h-15vh mobile:object-contain mobile:w-40vw rounded-lg object-cover" />
+      <Image src={volunteerImg3} alt="Image of ben friends" className="special-border-2 w-20vw h-35vh mobile:h-15vh mobile:object-contain mobile:w-40vw rounded-lg object-cover" />
     </div>
 
     <div className="flex flex-col items-center justify-center relative">

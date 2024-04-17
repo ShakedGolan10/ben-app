@@ -2,11 +2,7 @@
 import { Spinner, useDisclosure } from '@nextui-org/react';
 import React, { useEffect, useState } from 'react'
 import BlogElement from './blog-element';
-import volunteer from '@/assets/imgs/volunteer.jpeg'
-import benShirt from '@/assets/imgs/ben-shirt.jpg'
-import img3 from '@/assets/imgs/about-img.jpeg'
-import img4 from '@/assets/imgs/ben-pic-1.png'
-import img5 from '@/assets/imgs/example-img-1.jpeg'
+
 
 import CarouselCmp from '../carousel';
 import { fetchService } from '@/services/fetch.service';
