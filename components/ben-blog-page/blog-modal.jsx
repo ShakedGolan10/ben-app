@@ -1,5 +1,6 @@
 import React from "react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Image} from "@nextui-org/react";
+import { addBreakInString } from "@/constants";
 
 export default function BlogModal({blogContent ,isOpen, onClose, onOpenChange}) {
 
@@ -12,9 +13,8 @@ export default function BlogModal({blogContent ,isOpen, onClose, onOpenChange}) 
             <>
               <ModalHeader className="text-2xl">{blogContent.contentTitle}</ModalHeader>
               <ModalBody>
-                <p className="text-medium font-medium"> 
-                  {blogContent.text}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.text) }} className="text-medium font-medium" /> 
+                {/* </p> */}
                 {/* <div className="imgs-container flex flex-row justify-between items-center gap-2"> */}
                    <Image
                     alt="story-img"

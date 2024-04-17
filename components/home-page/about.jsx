@@ -3,6 +3,7 @@ import React from 'react'
 import starImg from '@/assets/imgs/star-img.png'
 import aboutImg from '@/assets/imgs/about-img.jpeg'
 import benTypoImg from '@/assets/imgs/hand-write-by-ben-about.png'
+import { aboutBen } from '@/constants'
 
 export default function About() {
   return (
@@ -11,9 +12,9 @@ export default function About() {
             <Image src={starImg} alt='star-icon' className='object-cover'/>
         </div>
         <div className='about-div-content flex flex-row justify-around mobile:flex-col gap-1vh'>
-        <p className=' text-headline-font-color font-medium max-w-35vw max-h-80vh self-start text-sm mobile:max-w-77vw mobile:self-center overflow-auto'>
-        ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן 
-        </p>
+        <p dangerouslySetInnerHTML={{ __html: aboutBen }} className=' text-headline-font-color font-medium max-w-35vw max-h-80vh self-start text-sm mobile:max-w-77vw mobile:self-center overflow-auto' />
+        
+        {/* </p> */}
         <Image src={benTypoImg} alt='ben handwrite sentance' className='bottom-33vh right-37vw max-h-25vh max-w-8vw self-end mobile:max-w-77vw mobile:self-center object-contain'/>
         <Image src={aboutImg} alt='image of ben' className='rounded-r-md h-66vh max-w-30vw object-cover self-end mobile:max-w-77vw mobile:self-center' />
         </div>

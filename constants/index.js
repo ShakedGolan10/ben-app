@@ -6,6 +6,12 @@ import timelineImg5 from '@/assets/imgs/timeline-img-5.png'
 import timelineImg6 from '@/assets/imgs/timeline-img-6.png'
 
 import volunteerPageImg1 from '@/assets/imgs/volunteer-page-img-1.jpg'
+
+export const addBreakInString = (string) => {
+    string = string.replaceAll(/(?<!\.)\.(?!\.)/g, ".<br>")
+    return string.replaceAll(':', ":<br>")
+}
+// /(?<!\.)\.(?!\.)/g
 const benTimelineInfo = [
     {
         imgSrc: timelineImg1,
@@ -44,30 +50,67 @@ const benTimelineInfo = [
 
 const benVolunteerInfo = [
     {
+        title: 'שלח - משצים',
         imgSrc: volunteerPageImg1,
-        paragraph: 'מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות ממל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות'
+        paragraph: addBreakInString(`בתקופת התיכון בן הצטרף "לתנועת הנוער משצי"ם" (מדרכי של"ח צעירים).  
+        בן היה פעיל בפעילויות, לפני כל פעילות היה מגיע לפני כולם כדי לסייע למורה, לסחוב ציוד ולדאוג לכולם. בן אהב את התנועה וגם כשסיים את לימודיו המשיך להתנדב ולצאת איתם למסעות, גם כחובש.`)
     },
     {
+        title: 'משטרת ישראל',
         imgSrc: volunteerPageImg1,
-        paragraph: 'מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות ממל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות'
+        paragraph: addBreakInString(`את אהבתו של בן למשטרת ישראל ספג עוד בילדותו מאביו ולאחר מכן מאחיו יוסי.   
+        בן העריץ את אביו ואחיו יוסי בדרכם וכשסוף סוף הגיע לתיכון היה לו ברור שגם הוא מתנדב למשטרה.  
+        יוסי ובן התנדבו יחד במשמר האזרחי ויצאו לסיורים משותפים מחסומים ובדיקות שיכרות. 
+        כשהיו חוזרים הביתה, בן היה מספר בהערצה על פעולותיהם כשהוא ואחיו יוסי ביצעו יחד מרדפים אחרי עבריני תנועה, מחסומים סיורים וכדומה.`)
     },
     {
+        title: 'מגן דוד אדום',
         imgSrc: volunteerPageImg1,
-        paragraph: 'מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות ממל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות'
+        paragraph: addBreakInString(`מד"א, היא ההתנדבות המועדפת !
+        בן הלך ללימודי קורס קבלה למד"א, אך לא עבר את הקורס בפעם הראשונה. כמובן שלא ויתר התעקש ולמד בחירוף נפש עד שעבר והפך לחובש ולאחר מכן לנהג אמבולנס. 
+        בן אהב את תפקידו כחובש במד"א, כי האמין שהצלת חיים תלויה ברוב הפעמים במענה הראשוני שניתן לאדם,  לכן בכל פעם שהיה יוצא מהבית, תיק מד"א עשיר במיוחד היה צמוד אליו. לדבריו: "סכנות ופגיעות יכולות להיות בכל רגע ובכל מקום, ואני צריך להיות מוכן לכל תרחיש".`)
     },
     {
+        title: 'מחייכים אל החיים',
         imgSrc: volunteerPageImg1,
-        paragraph: 'מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות ממל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות'
+        paragraph: addBreakInString(`מחייכים אל החיים, 
+        התנדבות למען ילדים עם צרכים מיוחדים ומשפחותיהם, שמטרתה לגרום לרגעי כייף ואושר למשפחות "בזכות הילד המיוחד".   
+        התנדבות שכל המשפחה התנדבה בה. ובכל מקום שיש התנדבות, בן הראשון לתרום ולהתנדב.`)
+
     },
     {
+        title: 'יום המעשים הטובים',
         imgSrc: volunteerPageImg1,
-        paragraph: 'מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות ממל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות'
+        paragraph: addBreakInString(`יום המעשים הטובים 
+        בכל 19 למרס בכל שנה, בן היה מתנדב בכל פעילות שהתבקש. 
+        צביעת מתנסים, הפנינג משפחות (דרך מחייכים אל החיים) וכל פעילות שהייתה מזדמנת בדרכו. 
+        וכמובן הכל בחיוך ואהבת חינם.  
+        השנה אזכרתו הראשונה 11 חודשים יצאה בדיוק ביום המעשים הטובים, ללא ספק " כלום לא קורה סתם..."`)
     },
     {
+        title: 'כנפיים של קרמבו',
         imgSrc: volunteerPageImg1,
-        paragraph: 'מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות ממל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות מלל על התנדבות'
+        paragraph: addBreakInString(`כנפיים של קרמבו
+        ההכרות של בן עם כנפיים של כרמבו הייתה דרך שריתה ממרוט שפועלת ועובדת בעמותה זמן רב. 
+        בכל פעילות שנצטרכה סיוע בהתנדבות, פנתה לבן והוא היה מתייצב וממתין למשימות.`)
     },
 ]
 
 
-export { benTimelineInfo, benVolunteerInfo }
+
+
+const aboutBen = addBreakInString(`נעים להכיר קוראים לי בן אברהם רומנו 🙋‍♂
+אני בן 25 מבת ים ואשמח לספר לכם את הסיפור שלי🙃 
+נולדתי ב-15/11/1997 ואני האח הסנדוויץ' במשפחה, לאחי הגדול קוראים יוסי ולאחותי הקטנה שירן.
+מאז ומעולם אנחנו מתגוררים בעיר בת ים.
+אני אדם שאוהב את החיים ואת הסובבים שלי. 
+גדלתי בבית חם ועוטף כזה שמלא בערכים ואהבה לזולת. לימדו אותי להקשיב, לעצור ולשאול, לדאוג לאלה שיושבים בסוף הכיתה ולהגיד כל בוקר שלום לשכנה. גדלתי בבית שאבי התנדב במשטרה ומשם ירשתי את האהבה להתנדבות. מהר מאוד הבנתי את העוצמה וידעתי גם שזה הייעוד שלי.
+ההתנדבות הראשונה שלי, בדיוק כמו אבא שלי- התחילה במשטרת ישראל ומשם צמחתי והכרתי אנשים מדהימים והתחלתי להיות פעיל בעמותות רבות כמו: משצ״ים, מחייכים אל החיים , כנפיים של קרמבו (יחד עם ילדים ונוער בעלי צרכים מיוחדים), מד"א (כחובש ונהג אמבולנס) ועמותת הילדים שלנו (הפועלת בביה"ח שניידר עבור הילדים החולים ומשפחותיהם) ועוד.
+והכי חשוב בעיניי אתם שואלים? זה הדברים הקטנים.
+לעזור לשכנה לסחוב את הקניות מהסופר לבית. 
+לעזור לאדם שנתקע עם פנצ'ר בצד הכביש.
+לקנות לאדם שאין לו מה לאכול אוכל.
+לשמח ילדים שמרגישים שאין אף אחד בעולם שאכפת לו מהם.
+להפיץ אור ושמחה לא משנה לאן שאני מגיע.`)
+
+export { benTimelineInfo, benVolunteerInfo, aboutBen }

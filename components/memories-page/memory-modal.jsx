@@ -6,7 +6,7 @@ export default function StoryModal({memory ,isOpen, onClose, onOpenChange}) {
 
   return (
     <>
-     <Modal backdrop={'blur'} isOpen={isOpen} onClose={onClose} className="max-h-90vh max-w-70vw overflow-auto">
+     <Modal backdrop={'blur'} isOpen={isOpen} onClose={onClose} className="max-h-90vh max-w-70vw overflow-auto rounded-3xl">
         <ModalContent>
           {(onClose) => (
             <>
@@ -16,7 +16,7 @@ export default function StoryModal({memory ,isOpen, onClose, onOpenChange}) {
                 <p className="text-medium font-medium"> 
                   {memory.text}
                 </p>
-                <div className="imgs-container flex flex-row justify-between items-center gap-2">
+                <div className="imgs-container flex flex-col justify-between items-center gap-2">
                 {memory.files.map((image) => {
                   return <Image
                     alt="story-img"
