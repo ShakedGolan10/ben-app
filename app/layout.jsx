@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en" dir='rtl'>
         <body>
           <Navbar />
-        <main className='main-layout relative flex flex-col gap-5vh'>
+        <main className='main-layout relative gap-5vh'>
           {children}
         </main>
         <AppFooter />
