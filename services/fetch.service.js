@@ -36,7 +36,9 @@ const api = async (endpoint, method = 'GET', data = null) => {
 
     try {
         const res = await fetch(request)
-        return await res.json()
+        const resJson = await res.json()
+        console.log('The api result =======> ', resJson)
+        return resJson
     } catch (error) {
         console.log(`Had Issues ${method}ing to the backend, endpoint: ${endpoint}, with data: `, data)
         if (error.response && error.response.status === 401) { // 401 means luck of authentication and that why we clear the session storage and redirect
