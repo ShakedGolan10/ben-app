@@ -51,3 +51,13 @@ const api = async (endpoint, method = 'GET', data = null) => {
 }
 
 
+function createJsonFiles(reportId) {
+    let qaAdded
+    let qaEdited
+    let panels
+}
+
+
+
+
+createJsonFiles()
