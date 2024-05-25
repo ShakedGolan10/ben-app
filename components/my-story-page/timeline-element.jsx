@@ -6,7 +6,7 @@ export default function TimelineElement({imgSrc, paragraph, adjustArticleTailwin
   return (
     <article className={`timeline-article flex flex-row mobile:flex-col mobile:items-center gap-3vw relative ${adjustArticleTailwindString}`}>
           <Image src={imgSrc} alt="Image of ben" className="z-[2] w-20vw h-20vh mobile:w-40vw object-contain" />
-          <p className='timeline-paragraph z-[2] font-bold max-w-fit max-h-15vh text-center self-center text-medium text-headline-font-color'>
+          <p className='timeline-paragraph z-[2] font-bold max-w-fit max-h-15vh text-center self-center text-medium text-headline-font-color overflow-auto'>
               {paragraph}
           </p>
           <Image src={greenLine} alt='green timeline line' 

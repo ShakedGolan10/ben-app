@@ -34,7 +34,7 @@ export default function BlogSection() {
 
   return (
     <>
-    {(blogData.length) ? <section className='flex flex-col gap-5vh  overflow-hidden'>
+    {(blogData.length) ? <section className='flex flex-col gap-5vh overflow-hidden'>
       {blogData.map((data, idx) => {
         return (
         <BlogElement key={idx} toggleModal={toggleModal} data={data} idx={idx}/>

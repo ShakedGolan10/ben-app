@@ -5,8 +5,9 @@ export default function ImgsGrid ({ images, numOfImagesPerRow, imageSize, toggle
   const templateRows = `grid-cols-3 gap-2vw` // Custom template
 
   return (
-    <div className={`m-2vw grid ${templateRows} justify-items-center mobile:grid-cols-1`}>
+    <div className={`mx-2vw my-2vh grid ${templateRows} justify-items-center mobile:grid-cols-1`}>
       {images.map((image) => (
+        <div key={image.id} className='image-container m-2vh'>
           <Image
             alt='author-image'
             key={image.id}
@@ -14,6 +15,7 @@ export default function ImgsGrid ({ images, numOfImagesPerRow, imageSize, toggle
             className='object-cover min-w-20vw min-h-33vh mobile:min-w-90vw mobile:min-h-30vh hover:scale-105 hover:cursor-pointer'
             onClick={() => toggleMemory(image.id)}
           />
+          </div>
           ))}
         
     </div>
