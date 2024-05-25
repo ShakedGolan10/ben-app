@@ -12,13 +12,13 @@ export default function BlogModal({blogContent = '' ,isOpen, onClose, onOpenChan
   // },[])
   return (
     <>
-     <Modal backdrop={'blur'} isOpen={isOpen} onClose={onClose} className="max-h-85vh overflow-auto" style={{'max-width': '90vw', 'margin-bottom': '5vh'}}>
-        <ModalContent>
+     <Modal backdrop={'blur'} isOpen={isOpen} onClose={onClose} className="max-h-85vh overflow-auto" style={{'maxWidth': 'max-content', 'marginBottom': '5vh'}}>
+        <ModalContent style={{'margin': '3vw'}}>
           {(onClose) => (
             <>
               <ModalHeader className="text-2xl">{blogContent.contentTitle}</ModalHeader>
-              <ModalBody>
-                <p id="content-p-blog-modal" dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.text) }} className="text-medium font-medium" /> 
+              <ModalBody style={{'alignItems': 'center'}}>
+                {blogContent.text && <p id="content-p-blog-modal" dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.text) }} className="text-medium font-medium" /> }
                 {/* </p> */}
                 {/* <div className="imgs-container flex flex-row justify-between items-center gap-2"> */}
                    <Image

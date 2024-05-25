@@ -7,8 +7,21 @@ const base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base(
 );
 
 export const GET = async (req, res) => {
+
+    const getYoutubePreviewImg = (youtubeLink) => {
+        const extractVideoId = (youtubeLink) => {
+            const regex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+            const match = youtubeLink.match(regex);
+            return match ? match[1] : null;
+        };
+
+        const videoId = extractVideoId(youtubeLink);
+        const imageUrl = videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null
+        return imageUrl
+    }
+
     try {
-        const fetchData = (tableName) => {
+        const fetchData = (tableName, cb) => {
             return new Promise((resolve, reject) => {
                 base(tableName).select().all((err, records) => {
                     if (err) {
@@ -16,11 +29,10 @@ export const GET = async (req, res) => {
                         reject(err);
                         return;
                     }
-
                     let data = records.map((record) => {
                         return {
                             id: record.fields["מזהה"],
-                            image: record.fields["תמונות"][0].url,
+                            image: (!record.fields["תמונות"]) ? cb(record.fields["קישור"]) : record.fields["תמונות"][0].url, // in case there isnt an img
                             contentTitle: record.fields["שם"],
                             text: record.fields["תוכן"],
                             location: record.fields["מיקום"], // This field is specific to trips & restaurants tables
@@ -37,7 +49,7 @@ export const GET = async (req, res) => {
             fetchData("טיולים"),
             fetchData("מתכונים"),
             fetchData("מסעדות"),
-            fetchData("פלייליסט")
+            fetchData("פלייליסט", getYoutubePreviewImg)
         ]);
 
         return new NextResponse(JSON.stringify(arrayData), { status: 200 })

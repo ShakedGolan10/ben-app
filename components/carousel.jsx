@@ -13,7 +13,7 @@ export default function CarouselCmp({data, toggleModal, idx}) {
   const [carouselData, setCarouselData] = useState([])
     useEffect(()=> {
       const imgsSrc = data.content.map((t) => {
-        return {id: t.id ,src: t.image}
+        return {id: t.id ,src: t.image, link: t.link}
       })
       setCarouselData(imgsSrc)
     },[])
@@ -80,7 +80,10 @@ export default function CarouselCmp({data, toggleModal, idx}) {
       radius='full'
       key={content.id}
       className='w-15vw h-15vw object-cover hover:scale-105 hover:cursor-pointer mobile:h-25vw mobile:w-25vw'
-      onClick={()=> toggleModal(content.id, idx)}
+      onClick={()=> {
+        (content.link) ? window.open(content.link, '_blank', 'noopener,noreferrer') : ''
+        return toggleModal(content.id, idx)
+      }}
       />
   )
     })}
