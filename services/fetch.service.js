@@ -1,18 +1,8 @@
 'use client'
 
-// import Axios from "axios"
-// import { Request } from "node-fetch"
-
 const BASE_URL = process.env.NODE_ENV === 'development'
     ? 'http://localhost:8800/api/'
     : '/api/'
-// const API_KEY = process.env.DATA_API_KEY as string
-
-// BIG Todo: Transform it to using fetch instead of axios
-// let axios = Axios.create({
-//     withCredentials: true
-// })
-
 
 export const fetchService = {
     GET(endpoint, data) {
@@ -37,7 +27,6 @@ const api = async (endpoint, method = 'GET', data = null) => {
     try {
         const res = await fetch(request)
         const resJson = await res.json()
-        console.log('The api result =======> ', resJson)
         return resJson
     } catch (error) {
         console.log(`Had Issues ${method}ing to the backend, endpoint: ${endpoint}, with data: `, data)
@@ -49,15 +38,3 @@ const api = async (endpoint, method = 'GET', data = null) => {
         throw error
     }
 }
-
-
-function createJsonFiles(reportId) {
-    let qaAdded
-    let qaEdited
-    let panels
-}
-
-
-
-
-createJsonFiles()
