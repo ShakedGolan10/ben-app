@@ -4,6 +4,7 @@ import timelineImg3 from '@/assets/imgs/timeline-img-3.png'
 import timelineImg4 from '@/assets/imgs/timeline-img-4.png'
 import timelineImg5 from '@/assets/imgs/timeline-img-5.png'
 import timelineImg6 from '@/assets/imgs/timeline-img-6.png'
+import timelineImg7 from '@/assets/imgs/timeline-img-7.png'
 
 import volunteerPageImgPolice from '@/assets/imgs/volunteer-img-1.jpg'
 import volunteerPageImg2 from '@/assets/imgs/volunteer-img-2.jpg'
@@ -21,35 +22,52 @@ export const addBreakInString = (string) => {
 const benTimelineInfo = [
     {
         imgSrc: timelineImg1,
-        paragraph: ' מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על '
+        paragraph: 'ב-5.11.97 יום שבת בבית החולים "וולפסון" בשעה 11:50  הגיח לעולם התינוק שלי במשקל 3.200 של אושר ואהבה. הילד השני שהכניס אור הביתה, אח ליוסי הקטן בן ה3. והילד הכי יפה במחלקה. "בן אברהם בן רחל ומוריס" הכריז המוהל ביום השמיני בברית המילה בן היה תינוק חייכן ,מתוק ,שובב ומלא מרץ.'
 
     },
 
     {
         imgSrc: timelineImg2,
-        paragraph: ' מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על '
+        paragraph: (`בגיל שנתיים בן שלי החל להרכיב משקפיים עם תספורת קרה עגולה וככה זכה לכינוי "הארי פוטר" .
+מהגן בן היה עליל הבנות מהרגע שנכנס בבוקר לגן כולם בשורה היו מחכות בתור לתת לנסיך נשיקה. אהב להיות אבא של שבת כשהבחירה לאמא של שבת תמיד הייתה קשה.
+מגיל קטן נלחם על העקרונות והצדק גם בעבור החברים שלו.`)
 
     },
     {
         imgSrc: timelineImg3,
-        paragraph: ' מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על '
-
+        paragraph: `בן עלה לכיתה א' בבית הספר "הנשיא" בבת ים עם כל חבריו מהגן ועד היום.
+ילד מבריק, מחונן, פטפטן וחרוץ. היה מסיים את שיעורי הבית כבר בכיתה כדי להספיק לשחק עם כל החברים וליצור עבודות יצירה ואומנות ולשחק עם אחיו יוסי כשיהיה עושה עליו "שיטות" (של מכות כמובן) כמו כל האחים, בן העריץ את יוסי בילדותו ובבגרותו והיה מודל לחיקוי עבורו כל ימי חייו.
+ביום הזיכרון בכיתה ו' בן שר את השיר "פרי גנך" של אביבה אבידן בסיומו כל המשתתפים הריעו בדמעות והתרגשות קורעת לב. מהגן לכיתה א' למד לנגן על אורגן על ידי מורה למשך כחצי שנה "הילד יגיע עוד לקונצרטים גדולים" אחרי זמן קצר בן כבר למד באופן עצמאי מהאינטרנט ואף המשיך ללמד עצמו גיטרה. ניגוניו היו מרגשים ותמיד משאירים מקום לרצות לשמוע עוד ועוד, בכל מקום שהיה בו פסנתר , ברחוב ,באולם , במלון היה מיד מתיישב ומתחיל לנגן ומסביבו מתאספים אנשים ומאזינים לצליל הנעימות שעשו לכולם נעים בלב ובנשמה.
+בגיל 9 הצטרפה אל המשפחה אחותו הקטנה שירן והשלושה היו בלתי נפרדים וניתנים לעצירה.
+בן התאהב מהרגע הראשון בלהיות אח גדול לראשונה וכמובן היה עושה "שיטות" על אחותו הקטנה מה שלא יעשה על אחיו😊`
     },
     {
         imgSrc: timelineImg4,
-        paragraph: ' מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על '
+        paragraph: `את כל תוכניות ההתנדבות החל מהחטיבה ועד ליומו האחרון. בן היה תלמיד אהוב במיוחד על המורים ועל חבריו לכיתה. המחנכת הדס אף אמרה שהייתה רוצה לשכפל ילד כמוהו.
+תקופת התיכון הייתה אבן דרך לחייו שם הכיר את אהבתו הראשונה, טייל נהנה ממגוון חוויות הנעורים ובעיקר אהב את טיולי הטבע בשל"ח ולילה לפני לא היה ישן מהתרגשות ומהצפייה לטיול.
+בן היה מארגן ציוד של חבלים ופנסים וכו' והכי חשוב תיק עזרה ראשונה למקרה הצורך, תמיד אמר שהמענה הראשוני יכול להציל חיים.
+באחד מטיוליו נעקץ ע"י בעל חיים ככל הנראה עקרב והוזעקנו לאסוף אותו לבית החולים כשידו שחורה ונפוחה, קיבל טיפול ולא היה מוכן לוותר על חזרה לטיול וכך היה.
+את התיכון סיים עם תעודת בגרות מלאה ואיכותית מלא במרץ ורצון להתחיל את תקופת שירותו הצבאי.`
 
     },
     {
         imgSrc: timelineImg5,
-        paragraph: 'מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על '
-
+        paragraph: `חלומו של בן שלי היה לעשות שירות קרבי בצבא אבל בשל פרופיל לא מתאים שירת בפיקוד העומק בקריה בתל אביב בתור מנהל לוגיסטי במערך מבצעים.
+בן היה צוחק ואומר שהוא קצין המבצעים של עזריאלי , כל מבצע בחנויות היה מעדכן את המשפחה בהומור הייחודי שלו.
+כחייל מפקדיו העריצו והעריכו ולא פעם התקשרו אלינו לספר שהם גאים בזכותך שניתנה להם לפקד על חייל בעל ערכים ומידות טובות כמו שיש רק לבן. את שירותו סיים כחייל מצטיין וזכה ללימודים על חשבון המערכת. בן היה חייל של אהבה היה מחכה לטיולים ולגיבושים צהליים על מנת לשמח, לחזק להצחיק ולעודד את כל השבוזים.
+הוא חזר לצה"ל במילואים בתור חובש ומציל והצטרף לטיולים רבים נוספים מתוקף תפקידו והיה נהנה מהטבות התשלום במילואים על ההנאה הפרטית שלו 😊`
     },
     {
         imgSrc: timelineImg6,
-        paragraph: 'מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן ממל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על בן מלל על '
-
+        paragraph: `אחרי הצבא בגיל 21 בן החליט כמו כל הצעירים לצאת לטיול ולעוף על החיים שלו בטיול אחרי הצבא לארץ המסקרנת והמדהימה ווייטנאם.
+במשך חודש וחצי עשה את מה שהוא הכי אוהב לעשות, לטייל בין הנופים המרהיבים , להכיר תרבויות חדשות ושונות ולהיות בחברת צעירים משוחררים ולהנות מהחיים. במהלך הטיול עשה רפטינג, סנפלינג מפלים, מסאז'ים בנג'י מסיבות וחוויות נוספות שיישארו שלו לנצח. בן עם הלב הכי ענק בעולם גם משם שלח לאמו תמונה עם חמניות וכתב "אולי אני לא בארץ אבל ברגע שראיתי את החמניות רציתי לקנות לכבוד החג אוהב אותך" גם מרחוק כל חג וכל שבת היה מאחל את ברכת השבת שלום והיה מתגעגע לאוכל של אמא. מיד לאחר הטיול החל את לימודיו במכון הטכנולוגי חולון בתור הנדסאי חשמל מוסמך בחסות אלקטרה. בן עבד גם כמציל בקאנטרי עם אביו וכל שבת משפחתו היית מצטרפת לבילוי של שבת איתם.`
     },
+    {
+        imgSrc: timelineImg7,
+        paragraph: `בן חי את החיים! 
+קריוקי, ישבות נרגילה , מפגשי מכוניות ואופנועים , לשמח חתן כלה ואירועים רבים שבהם היה כוכב הערב תמיד מסטול בלי אלכוהול , רקדן אוטומטי בכל רמ"ח איבריו,חבר אמיתי אשר נמצא כל הזמן זמין לכל בעיה: "בן לשעת חירום" כך כינו אותו חבריו. לכל חבר בתקופה מאתגרת תמיד אמר " מהלימון תעשה לימונדה" והוכיח עצמו כחבר נפש לעד וכל סביבתו האמינה באופן אישי שהוא האחד המיוחד בעיניו, זו הייתה גדולתו בחייו ובמותו. חברים רבים קעקעו על גופם את בן במגוון דרכים להנצחתו על גופם לתמיד. משפט שהיה שגור במשפחתו של אברהם אבינו " ויהיה כשולחנו של אברהם אבינו כל רעב ממנו יאכל וכל צמא ממנו ישתה" תמיד הבית פתוח לכל חבריו ומכריו בכל חג היה מזמין חברים מבלי לעדכן את אמא וכאמא שואלת "למה לא אמרת?" , היה עונה  : " גם ככה בחיים את לא אומרת לא וברור שאם אין לו איפה לעשות הוא אצלנו" בכל הזדמנות היה הביא חברים ותמיד לסעודת "על הדרך" עם הפיצות של אמא, השניצל והפסטה. 
+`
+    }
 
 ]
 
