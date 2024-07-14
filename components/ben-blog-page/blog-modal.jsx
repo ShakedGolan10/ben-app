@@ -1,31 +1,26 @@
 // import { useEffect } from "react";
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Image} from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Image } from "@nextui-org/react";
 import { addBreakInString } from "@/constants";
 
-export default function BlogModal({blogContent = '' ,isOpen, onClose, onOpenChange}) {
+export default function BlogModal({ blogContent = '', isOpen, onClose, onOpenChange }) {
 
-  // useEffect(() => {
-  //   if (blogContent) {
-  //   const element = document.getElementById("content-p-blog-modal");
-  //   element.innerHTML = addBreakInString(blogContent.text)
-  //   }
-  // },[])
   return (
     <>
-     <Modal backdrop={'blur'} isOpen={isOpen} onClose={onClose} className="max-h-85vh overflow-auto" style={{'maxWidth': 'max-content', 'marginBottom': '5vh'}}>
-        <ModalContent style={{'margin': '3vw'}}>
+      <Modal backdrop={'blur'} isOpen={isOpen} onClose={onClose} className="max-h-85vh overflow-auto" style={{ 'maxWidth': 'max-content', 'marginBottom': '5vh' }}>
+        <ModalContent style={{ 'margin': '3vw' }}>
           {(onClose) => (
             <>
               <ModalHeader className="text-2xl">{blogContent.contentTitle}</ModalHeader>
-              <ModalBody style={{'alignItems': 'center'}}>
-                {blogContent.text && <p id="content-p-blog-modal" dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.text) }} className="text-medium font-medium" /> }
+              <ModalBody style={{ 'alignItems': 'center' }}>
+                {blogContent.text && <p id="content-p-blog-modal" dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.text) }} className="text-medium font-medium my-2" />}
+                {blogContent.ingredients && <p id="content-p-blog-modal" dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.ingredients) }} className="text-medium font-medium my-2" />}
                 {/* </p> */}
                 {/* <div className="imgs-container flex flex-row justify-between items-center gap-2"> */}
-                   <Image
-                    alt="story-img"
-                    src={blogContent.image}
-                    className="w-15vw h-15vw object-cover"
-                  />
+                <Image
+                  alt="story-img"
+                  src={blogContent.image}
+                  className="w-15vw h-15vw object-cover"
+                />
                 {/* </div> */}
               </ModalBody>
               <ModalFooter>

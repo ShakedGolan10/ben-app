@@ -35,6 +35,7 @@ export const GET = async (req, res) => {
                             image: (!record.fields["תמונות"]) ? cb(record.fields["קישור"]) : record.fields["תמונות"][0].url, // in case there isnt an img
                             contentTitle: record.fields["שם"],
                             text: record.fields["תוכן"],
+                            ingredients: record.fields["מצרכים"], // This field is specific to recipes tables
                             location: record.fields["מיקום"], // This field is specific to trips & restaurants tables
                             link: record.fields["קישור"] // This field is specific to playlist table
                         };
@@ -51,7 +52,6 @@ export const GET = async (req, res) => {
             fetchData("מסעדות"),
             fetchData("פלייליסט", getYoutubePreviewImg)
         ]);
-
         return new NextResponse(JSON.stringify(arrayData), { status: 200 })
     } catch (error) {
         console.error("Server error:", error);
