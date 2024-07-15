@@ -21,6 +21,9 @@ export default function MemoriesGrid() {
     };
     getMemoriesData();
   }, [])
+  useEffect(() => {
+    console.log('data:', allMemories)
+  }, [allMemories])
 
   const handleSearch = async (ev) => {
     const { value } = ev.target
