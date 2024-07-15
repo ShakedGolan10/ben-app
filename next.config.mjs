@@ -4,10 +4,24 @@ const nextConfig = {
     reactStrictMode: false,
     experimental: {
         serverMinification: false,
-    }
+    },
+    async headers() {
+        return [
+            {
+                source: '/:all*(svg|jpg|jpeg|png|gif|webp|ico|css|js)', // Match all static files
+                headers: [
+                    {
+                        key: 'Cache-Control',
+                        value: 'no-store, max-age=0',
+                    },
+                ],
+            },
+        ];
+    },
 };
 
 export default nextConfig;
+
 
 // images: {
 //     remotePatterns: [
