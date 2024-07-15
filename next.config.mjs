@@ -8,11 +8,23 @@ const nextConfig = {
     async headers() {
         return [
             {
-                source: '/:all*(svg|jpg|jpeg|png|gif|webp|ico|css|js)', // Match all static files
+                source: '/(.*)', // Match all static files
                 headers: [
                     {
                         key: 'Cache-Control',
-                        value: 'no-store, max-age=0',
+                        value: 'no-store, no-cache, must-revalidate, proxy-revalidate',
+                    },
+                    {
+                        key: 'Pragma',
+                        value: 'no-cache',
+                    },
+                    {
+                        key: 'Expires',
+                        value: '0',
+                    },
+                    {
+                        key: 'Surrogate-Control',
+                        value: 'no-store',
                     },
                 ],
             },
