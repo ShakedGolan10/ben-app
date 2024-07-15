@@ -21,8 +21,8 @@ export const fetchService = {
 const api = async (endpoint, method = 'GET', data = null) => {
 
     const url = (method === 'GET' && data) ? `${BASE_URL}${endpoint}?${new URLSearchParams(data)}` : `${BASE_URL}${endpoint}`
-    const request = (method === 'GET') ? new Request(url, { method, cache: 'no-cache' }) :
-        new Request(url, { method, cache: "no-cache", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+    const request = (method === 'GET') ? new Request(url, { method, cache: "no-store" }) :
+        new Request(url, { method, cache: "no-store", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
 
     try {
         const res = await fetch(request)
