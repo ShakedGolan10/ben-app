@@ -17,7 +17,6 @@ export async function middleware() {
   return response;
 }
 
-// Define matcher to ensure middleware runs for all routes
 export const config = {
   matcher: '/api/:path*',
 };
