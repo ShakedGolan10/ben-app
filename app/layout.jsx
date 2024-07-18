@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" dir='rtl'>
         <body>
-          <Navbar />
+        <Navbar />
         <main className='main-layout relative gap-5vh'>
-          {children}
-        </main>
+            {children}
+        </  main>
         <AppFooter />
         </body>
     </html>
