@@ -39,7 +39,7 @@ export default function MemoriesGrid() {
   
   return (
     <>
-    <div className='memories-section-heading flex flex-row justify-between mx-1'>
+    <div className='memories-section-heading flex flex-row justify-between mx-1 gap-3vw'>
       <p className={`font-bold max-w-fit text-center text-2xl mobile:text-lg text-headline-font-color smMobile:text-medium`}>כל הסיפורים (לחץ על תמונה כדי לראות את הסיפור)</p>
       <div className='input-wrapper relative'>
         <input className='border-none p-1 min-w-20vw bg-app-blue rounded-lg' 
