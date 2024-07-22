@@ -45,24 +45,3 @@ export default function BlogSection() {
     </>
   )
 }
-// [{
-//   title: 'המתכונים של בן' ,
-//   content: [
-//     {
-//       contentTitle: 'פסטה ברוטב עגבניות',
-//       image: [benShirt.src], 
-//       text: 'paaaaaaa paaaaaaaaaaaaa paaaaaaaaaap apap appapapap p papa p p pppap p apa pa pappa kdopjs jn n sjfsjjjj j jjaj ap jk j jJAJSJAJ J J JASJJJJJ J J J J JJJJJJ'
-//     }
-//   ]
-// },  
-// {
-// title: 'הבנות של בן' ,
-// content: [
-//   {
-//     contentTitle: 'פסטה ברוטב עגבניות',
-//     image: [benShirt.src], 
-//     text: 'paaaaaaa paaaaaaaaaaaaa paaaaaaaaaap apap appapapap p papa p p pppap p apa pa pappa kdopjs jn n sjfsjjjj j jjaj ap jk j jJAJSJAJ J J JASJJJJJ J J J J JJJJJJ'
-//   }
-// ]
-// }
-// ]

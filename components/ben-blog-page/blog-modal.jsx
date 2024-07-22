@@ -11,17 +11,20 @@ export default function BlogModal({ blogContent = '', isOpen, onClose, onOpenCha
           {(onClose) => (
             <>
               <ModalHeader className="text-2xl">{blogContent.contentTitle}</ModalHeader>
-              <ModalBody style={{ 'alignItems': 'center' }}>
-                {blogContent.text && <p id="content-p-blog-modal" dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.text) }} className="text-medium font-medium my-2" />}
-                {blogContent.ingredients && <p id="content-p-blog-modal" dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.ingredients) }} className="text-medium font-medium my-2" />}
-                {/* </p> */}
-                {/* <div className="imgs-container flex flex-row justify-between items-center gap-2"> */}
+                {blogContent.location && <ModalHeader className="text-medium font-medium">{blogContent.location}</ModalHeader>}
+              {/* style={{ 'alignItems': 'center', 'textAlign': 'right' }} */}
+              <ModalBody >
+                {blogContent.ingredients && <span className="text-lg font-medium">מצרכים :</span>}
+                {blogContent.ingredients && <p id="content-p-blog-modal" dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.ingredients) }} className="text-medium font-medium my-2 text-right" />}
+                {blogContent.ingredients && <span className="text-lg font-medium">אופן הכנה :</span>}
+                {blogContent.text && <p id="content-p-blog-modal " dangerouslySetInnerHTML={{ __html: addBreakInString(blogContent.text) }} className="text-medium font-medium my-2 text-right" />}
+                <div className="imgs-container self-center">
                 <Image
                   alt="story-img"
                   src={blogContent.image}
-                  className="w-15vw h-15vw object-cover"
+                  className="object-contain"
                 />
-                {/* </div> */}
+                </div>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

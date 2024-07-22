@@ -31,13 +31,13 @@ export default function BenTimeline() {
           />
         })}
         <Image src={flower} alt='timeline image' 
-          className={`mobile:hidden absolute top-[49%] right-[10%] object-contain w-33vw h-25vh z-[1]`} 
+          className={`mobile:hidden absolute top-[65%] right-[10%] object-contain w-33vw h-25vh z-[1]`} 
           />
         <Image src={bird} alt='timeline image' 
           className={`mobile:hidden absolute top-[87%] right-[51%] object-contain w-33vw h-25vh z-[1]`} 
           />
         <Image src={butterfly} alt='timeline image' 
-          className={`mobile:hidden absolute top-[22%] right-[54%] object-contain w-33vw h-25vh z-[1]`} 
+          className={`mobile:hidden absolute top-[20%] right-[54%] object-contain w-33vw h-25vh z-[1]`} 
           />
     </section>
   )

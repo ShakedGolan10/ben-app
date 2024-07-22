@@ -1,7 +1,6 @@
 'use clinet'
 import 'react-multi-carousel/lib/styles.css';
 import '@/styles/modules/carousel.scss'
-// import Image from 'next/image';
 import { Image } from '@nextui-org/react' 
 import Carousel from "react-multi-carousel";
 import { useEffect, useState } from 'react';
@@ -79,7 +78,7 @@ export default function CarouselCmp({data, toggleModal, idx}) {
       src={content.src}
       radius='full'
       key={content.id}
-      className='w-15vw h-15vw object-cover hover:scale-105 hover:cursor-pointer mobile:h-25vw mobile:w-25vw'
+      className='w-15vw h-15vw object-cover object-top hover:scale-105 hover:cursor-pointer mobile:h-25vw mobile:w-25vw'
       onClick={()=> {
         (content.link) ? window.open(content.link, '_blank', 'noopener,noreferrer') : ''
         return toggleModal(content.id, idx)
