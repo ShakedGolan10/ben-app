@@ -41,10 +41,10 @@ const config = {
       },
       height: {
         'navbar-height': '90px',
-        'logo-img-h': '75px',
+        'logo-img-h': '125px',
       },
       width: {
-        'logo-img-w': '100px',
+        'logo-img-w': '150px',
       },
       zIndex: {
         ...nums(0, 50),

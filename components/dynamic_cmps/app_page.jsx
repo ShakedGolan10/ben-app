@@ -10,7 +10,7 @@ export default function AppPage() {
 
   return (
     <>
-   <BackgroundImage imgSrc={heroImg} adjustImageStyleTailwindString={'lg:object-heroImg object-heroImgSetZero object-cover'}/>
+      <BackgroundImage imgSrc={heroImg} adjustImageStyleTailwindString={'lg:object-heroImg object-heroImgSetZero object-cover'}/>
       <HomePageHero subTitle={'הילד עם החיוך הנצחי...'} titleImgSrc={nameImg} buttonTitle="להוספת סיפור משותף" 
       mainArticleAdjustmentTailwindString={'-top-10vh right-0vw'} subTitleAdjustmentTailwindString="smMobile:hidden"/>
       <About />

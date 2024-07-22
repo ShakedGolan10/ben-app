@@ -24,7 +24,7 @@ export default function Navbar() {
     <nav className='w-full pr-right-padding-nav bg-bgc-nav-bar-upper h-navbar-height flex flex-row justify-start items-center mobile:justify-between gap-nav-gap mobile:gap-8vw'>
       <div className='logo-container h-logo-img-h w-logo-img-w'>
         <a href="/">
-        <Image src={benLogo} alt='page-logo' />
+        <Image src={benLogo} alt='page-logo' className='object-cover' />
         </a>
       </div>
       <div className='mobile:hidden links-div flex flex-row justify-around items-center gap-nav-links-gap mobile:gap-2vw'>
